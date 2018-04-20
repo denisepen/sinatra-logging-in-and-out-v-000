@@ -11,15 +11,5 @@ class Helpers
   !!session[:user_id]
     end
 
-  def current_user(session)
-    @user = User.find(session[:user_id])
-
-
-  end
-
-  def is_logged_in?(session)
-     !!current_user || !current_user
-
-  end
-
+  
 end
